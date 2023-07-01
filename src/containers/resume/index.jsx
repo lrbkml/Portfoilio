@@ -111,7 +111,7 @@ const Resume = () => {
 
 
         <div className="timeline__extracir">
-          <h3 className="timeline__extracir__header-text">Extracurricular Activities</h3>
+          <h3 className="timeline__extracir__header-text">Voluntary Activities</h3>
           <VerticalTimeline
             layout={"1-column"}
             lineColor="var(--yellow-theme-main-color)"

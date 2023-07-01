@@ -3,43 +3,96 @@ import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
 import ImageOne from "../../images/image1.jpg";
 import ImageTwo from "../../images/image2.jpg";
-import ImageThree from "../../images/image3.jpg";
+// import ImageThree from "../../images/image3.jpg";
 import ImageFour from "../../images/image4.jpg";
 import ImageFive from "../../images/image5.jpg";
+import ImageSix from "../../images/counter.jpg";
+import ImageSeven from "../../images/calculator.jpg";
+import ImageEight from "../../images/chat.jpg";
+import ImageNine from "../../images/quiz.jpg";
+import ImageTen from "../../images/weather.jpg";
+import ImageEleven from "../../images/text.jpg";
 import "./styles.scss";
 import { useState } from "react";
 
 const portfolioData = [
   {
     id: 2,
-    name: "Ecommerce",
-    image: ImageOne,
-    link: "",
+    name: "Weather App",
+    image: ImageTen,
+    link: "https://weatherlrb.netlify.app/",
+    
   },
-  {
-    id: 3,
-    name: "Notes App",
-    link: "",
-    image: ImageTwo,
-  },
-  {
-    id: 2,
-    name: "Supplier Design",
-    image: ImageThree,
-    link: "",
-  },
-  {
-    id: 2,
-    name: "Todo App",
-    image: ImageFour,
 
-    link: "",
+  {
+    id: 2,
+    name: "Quiz-App",
+    image: ImageNine,
+    link: "https://quiz-lrb.netlify.app/"
+
+    
+  },
+  {
+    id: 2,
+    name: "Simple Counter",
+    image: ImageSix,
+    link: "https://counter-lrb.netlify.app/"
+
+    
   },
   {
     id: 3,
-    name: "Shopping cart design",
+    name: "Tic Tac Game(py)",
     image: ImageFive,
-    link: "",
+    link:"https://github.com/lrbkml/tic-tac"
+  },
+  {
+    id: 2,
+    name: "Chat Application",
+    image: ImageEight,
+    link:"https://github.com/lrbkml/Chat-Applicatiion"
+   
+  },
+  {
+    id: 3,
+    name: "Currency Converter(py)",
+    image: ImageFour,
+    link:"https://github.com/lrbkml/Currency-Converter"
+
+  },
+  {
+    id: 2,
+    name: "School Website",
+    image: ImageOne,
+    link: "https://ssms.netlify.app/"
+    
+  },
+  {
+    id: 2,
+    name: "Calculator",
+    image: ImageSeven,
+    link: "https://calculator-lrb.netlify.app/"
+
+    
+  },
+  
+  {
+    id: 3,
+    name: "Password-Generator(py)",
+    image: ImageTwo,
+    link:"https://github.com/lrbkml/password-generator"
+
+
+    
+  },
+ 
+  {
+    id: 2,
+    name: "TextUtils",
+    image: ImageEleven,
+    link: "https://github.com/lrbkml/Textutils"
+
+    
   },
 ];
 
@@ -50,11 +103,11 @@ const filterData = [
   },
   {
     filterId: 2,
-    label: "Developement",
+    label: "Web-dev",
   },
   {
     filterId: 3,
-    label: "Design",
+    label: "Other",
   },
 ];
 
@@ -108,7 +161,7 @@ const Portfolio = () => {
               onMouseLeave={() => handleHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <img alt="dummy data" src={item.image} />
                 </a>
               </div>
@@ -116,7 +169,14 @@ const Portfolio = () => {
                 {index === hoveredValue && (
                   <div>
                     <p>{item.name}</p>
-                    <button>Visit</button>
+                    <button
+                      onClick={() => {
+                       
+                        window.open(item.link, "_blank");
+                      }}
+                    >
+                      Visit
+                    </button>
                   </div>
                 )}
               </div>
