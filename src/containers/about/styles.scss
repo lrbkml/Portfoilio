@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .about {
   &__content {
     display: flex;
@@ -27,7 +28,7 @@
         font-size: 1.8rem;
         line-height: 1.65;
         padding-bottom: 20px;
-        border-bottom: 1px dashed var(--yellow-theme-main-color);
+        // border-bottom: 1px dashed var(--yellow-theme-main-color);
       }
 
       ul > li {
@@ -39,16 +40,16 @@
           font-size: 18px;
           font-weight: 700;
           letter-spacing: 0.5px;
-          border-bottom: 2px solid var(--yellow-theme-main-color);
+          // border-bottom: 2px solid var(--yellow-theme-main-color);
           position: relative;
           display: inline-block;
           margin-right: 16px;
-          padding-bottom: 5px;
+          // padding-bottom: 5px;
           color: var(--yellow-theme-sub-text-color);
         }
 
         span.value {
-          border: none;
+          // border: none;
         }
       }
     }

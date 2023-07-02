@@ -1,6 +1,6 @@
 import { Line } from "rc-progress";
 import React from "react";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { BsCodeSlash } from "react-icons/bs";
 import { Animate, AnimateKeyframes } from "react-simple-animate";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { skillsData } from "./utils";
@@ -11,7 +11,7 @@ const Skills = () => {
     <section id="skills" className="skills">
       <PageHeaderContent
         headerText="My Skills"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<BsCodeSlash size={40} />}
       />
       <div className="skills__content-wrapper">
         {skillsData.map((item, i) => (

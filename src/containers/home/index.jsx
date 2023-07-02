@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
+import { FaFileDownload,FaHandHoldingUsd } from "react-icons/fa";
 import "./styles.scss";
 
 const Home = () => {
@@ -8,6 +9,9 @@ const Home = () => {
 
   const handleNavigateToContactMePage = () => {
     navigate("/contact");
+  };
+  const openResume = () => {
+    window.open("https://drive.google.com/drive/folders/1oN0COepb7kLGjsbqRznn-29aQHFEGSue?usp=sharing", "_blank");
   };
 
   return (
@@ -35,8 +39,8 @@ const Home = () => {
         }}
       >
         <div className="home__contact-me">
-          <button onClick={handleNavigateToContactMePage}>Hire Me</button>
-          <button>Resume</button>
+          <button onClick={handleNavigateToContactMePage}>Hire Me &nbsp;{<FaHandHoldingUsd size={30} />} </button>
+          <button onClick={openResume}>Download Resume {<FaFileDownload size={30} />}</button>
         </div>
         
       </Animate>

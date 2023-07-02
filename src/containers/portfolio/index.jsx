@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { BsPerson } from "react-icons/bs";
 import ImageOne from "../../images/image1.jpg";
 import ImageTwo from "../../images/image2.jpg";
 // import ImageThree from "../../images/image3.jpg";
@@ -138,7 +138,7 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
         headerText="My Portfolio"
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<BsPerson size={40} />}
       />
       <div className="portfolio__content">
         <ul className="portfolio__content__filter">

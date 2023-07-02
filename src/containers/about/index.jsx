@@ -3,7 +3,7 @@ import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
-import { DiApple, DiAndroid } from "react-icons/di";
+import { DiReact, DiBootstrap } from "react-icons/di";
 import { FaDev, FaDatabase } from "react-icons/fa";
 
 const personalDetails = [
@@ -25,7 +25,7 @@ const personalDetails = [
   },
   {
     label: "Contact No",
-    value: "+11 3456789056",
+    value: "9205650356",
   },
 ];
 
@@ -97,14 +97,15 @@ const About = () => {
                 <FaDev size={60} color="var( --yellow-theme-main-color)" />
               </div>
               <div>
-                <DiAndroid size={60} color="var( --yellow-theme-main-color)" />
+                <DiReact size={60} color="var( --yellow-theme-main-color)" />
               </div>
               <div>
                 <FaDatabase size={60} color="var( --yellow-theme-main-color)" />
               </div>
               <div>
-                <DiApple size={60} color="var( --yellow-theme-main-color)" />
+                <DiBootstrap size={60} color="var( --yellow-theme-main-color)" />
               </div>
+              
             </div>
           </Animate>
         </div>

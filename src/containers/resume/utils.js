@@ -24,7 +24,7 @@ export const data = {
         title: "Internship Program ",
         subTitle: "Highradius",
         description:
-          "In this 2 month internship training I have worked on frontend development.",
+          "In this 2 month internship training in which I have worked on frontend development.",
           dates:"28 January - 13 April 2022"
       },
       
@@ -55,7 +55,7 @@ export const data = {
     extracir: [
       {
         title: "Organisations",
-        subTitle: "NSS(National Service Scheme) , Howard Smiles",
+        subTitle: "NSS(National Service Scheme) , Howard Smiles NGO",
         description:
           "Unit Leader(Aagaz) at NSS in 2023 , Promotion head at Howard Smiles in 2022",
           dates:"2019-2023",
@@ -70,7 +70,7 @@ export const data = {
       },
       {
         title: "Road Safety Awareness",
-        subTitle: "ABC School of higher education",
+        subTitle: "",
         description:
           "Participated in “Road Safety Awareness” organised by Honda",
           dates:"2020",
