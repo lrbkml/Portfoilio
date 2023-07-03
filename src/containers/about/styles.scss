@@ -48,9 +48,9 @@
           color: var(--yellow-theme-sub-text-color);
         }
 
-        span.value {
-          // border: none;
-        }
+        // span.value {
+        //   // border: none;
+        // }
       }
     }
 
@@ -70,6 +70,7 @@
         border-radius: 50%;
         border: 1.5px solid var(--yellow-theme-main-color);
         animation: rotation 10s linear 1s infinite;
+       
 
         div:nth-child(1) {
           position: absolute;

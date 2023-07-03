@@ -3,7 +3,7 @@ export const skillsData = [
       label: "WEB DEV",
       data: [
         {
-          skillName: "HTML",
+          skillName: "HTM",
           percentage: "90",
         },
         {
