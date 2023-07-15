@@ -24,7 +24,7 @@ export const data = {
         title: "Internship Program ",
         subTitle: "Highradius",
         description:
-          "In this 2 month internship training in which I have worked on frontend development.",
+          "In this 2 month internship training I have worked on frontend development.",
           dates:"28 January - 13 April 2022"
       },
       
